@@ -1,0 +1,113 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+#features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100vh;
+    background: #fff 0 0 no-repeat padding-box;
+    border: 1px solid #707070;
+    position: relative;
+}
+#features .item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    -webkit-transition: 1s;
+    transition: 1s;
+    line-height: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #393939 0 0 no-repeat padding-box;
+}
+#features .item .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 50vh 15%;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+#features {
+    .item {
+      .content {
+        p {
+          font: normal normal normal 18px/30px Avenir Next;
+          letter-spacing: 0;
+          display: none;
+          margin-top: 2rem;
+          width: 400px;
+          height: 400px;
+  
+          &:hover {
+            /* Styles to apply on hover */
+            display: block; /* Show the paragraph on hover */
+          }
+        }
+      }
+    }
+  
+    p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+  }
+  #features .item:hover>.content p {
+    display: block;
+}
+#features .item img {
+    width: 200%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: right bottom;
+    object-position: right bottom;
+    opacity: .4;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+img, svg {
+    vertical-align: middle;
+}
+img {
+    border-style: none;
+}
+#features .item:hover {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 30%;
+    flex: 1 1 30%;
+    background: #2f3133 0 0 no-repeat padding-box;
+}
+#features .item:hover>.content {
+    padding: 40vh 15%;
+}
+
+#features .item .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 50vh 15%;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+#features .item .content h3 {
+    text-align: center;
+    font: normal normal 600 18px/22px Quasimoda;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+  

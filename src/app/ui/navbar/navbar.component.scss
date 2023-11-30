@@ -1,0 +1,67 @@
+/* Make the entire toolbar transparent */
+.mat-toolbar {
+    background: transparent;
+    box-shadow: none; /* Remove any box shadow */
+    border: 1px solid red;
+   
+  }
+  
+  /* Customize styles for the logo or app name */
+  .app-logo {
+    display: flex;
+    align-items: center;
+img{
+  width: 100px!important;
+}
+  }
+  
+  .app-logo img {
+    width: 40px; /* Adjust the logo size as needed */
+    height: auto;
+  }
+  
+  .app-name {
+    font-size: 20px; /* Adjust the font size as needed */
+    margin-left: 8px; /* Add spacing between logo and app name */
+  }
+  
+  /* Style for navigation links */
+  .nav-links {
+    a {
+      color:red; /* Set the text color to white */
+      text-decoration: none;
+      margin-right: 20px; /* Add spacing between links */
+      transition: color 0.3s ease; /* Add a smooth color transition on hover */
+  
+      &.active {
+        color: #dde0e0; /* Set the active link color */
+      }
+  
+      &:hover {
+        color: #cfd7d8; /* Set the hover color */
+      }
+    }
+  }
+  
+  /* Style for user profile icon */
+  .user-actions {
+    button {
+      color: #fff; /* Set the icon color to white */
+      background-color: transparent; /* Make the button background transparent */
+      border: none; /* Remove button border */
+    }
+  
+    .mat-menu-content {
+      background-color: #fff; /* Set the background color of the menu content */
+      color: #333; /* Set the text color in the menu content */
+  
+      button {
+        color: #333; /* Set the color of menu items */
+      }
+    }
+  }
+
+
+
+  
+  
